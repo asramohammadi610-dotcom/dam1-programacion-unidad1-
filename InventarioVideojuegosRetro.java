@@ -14,6 +14,8 @@ public class InventarioVideojuegosRetro {
         int vendidas = sc.nextInt();
         consolas -= vendidas;
 
+        consolas = Math.min(0, consolas);
+
         System.out.printf("Inventario final: %d consolas%n", consolas);
 
         sc.close();
